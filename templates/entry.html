@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<h2>{{ the_title }}</h2>
+
+<form method='POST' action='/search4'>
+    <p class="form__title">Write artist name</p>
+    <input class="text" name='phrase' type='TEXT' width='60' placeholder="Enter artist name:">
+    <input class="sub" value='Submit!' type='SUBMIT'>
+</form>
+
+{% endblock %}
